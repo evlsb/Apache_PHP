@@ -43,16 +43,6 @@
 |217|***ServerAdmin admin@example.com"***|***ServerAdmin localhost:80"***|_адрес сайта_|
 |250|***DocumentRoot "${SRVROOT}/htdocs"***|***DocumentRoot "D:/WEB/tmp_GIT/www"***|_каталог сайта_|
 |251|***DocumentRoot "${SRVROOT}/htdocs"***|***<Directory "D:/WEB/tmp_GIT/www">***|_каталог сайта_|
-|-----|-----|-----|```python
-
-<IfModule mime_module>
-    AddType application/x-compress .Z
-    AddType application/x-gzip .gz .tgz
-    AddType application/x-httpd-php .php
-    AddType application/x-httpd-php-source .phps
-</IfModule>
-
-```|
 
 Добавляем в конец файла строки:
 
