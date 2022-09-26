@@ -37,9 +37,7 @@ D:\WEB\tmp_GIT\php_th
 D:\WEB\tmp_GIT\Apache24\bin
 
 ```
-> ***D:\WEB\tmp_GIT\php_th***
 
-> ***D:\WEB\tmp_GIT\Apache24\bin***
 
 ## Установка Apache 2.4
 
