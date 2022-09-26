@@ -53,10 +53,6 @@ PHPIniDir "D:/WEB/tmp_GIT/php_th"
 
 ```
 
-> LoadModule php_module "D:/WEB/tmp_GIT/php_th/php8apache2_4.dll"  
-
-> PHPIniDir "D:/WEB/tmp_GIT/php_th"
-
 ```python
 
 <IfModule mime_module>
