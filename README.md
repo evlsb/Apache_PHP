@@ -37,9 +37,7 @@
 
 Заменить (37 строка)
 > ***Define SRVROOT "c:/Apache24"***
-
 на
-
 > ***Define SRVROOT "D:/WEB/tmp_GIT/Apache24"***
 
 
