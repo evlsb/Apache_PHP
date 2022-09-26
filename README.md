@@ -41,9 +41,10 @@
 |-----|-----|-----|
 |37|***Define SRVROOT "c:/Apache24"***|***Define SRVROOT "D:/WEB/tmp_GIT/Apache24"***
 |217|***ServerAdmin admin@example.com"***|***ServerAdmin localhost:80"***|
-|-----|-----|LoadModule php_module "D:/WEB/tmp_GIT/php_th/php8apache2_4.dll"  
-PHPIniDir "D:/WEB/tmp_GIT/php_th"|
+|250|***DocumentRoot "${SRVROOT}/htdocs"***|***DocumentRoot "D:/WEB/tmp_GIT/www"***|
+|251|***DocumentRoot "${SRVROOT}/htdocs"***|***<Directory "D:/WEB/tmp_GIT/www">***|
 
+> Define SRVROOT на "D:\WEB\tmp_GIT\Apache24"
 
 
 
