@@ -12,11 +12,10 @@
 - tmp_GIT
     - Apache24
         - \*\*\*
-        - <details><summary>conf</summary>
+        - conf
             - \*\*\*
             - httpd.conf
             - \*\*\*
-            </details>
         - \*\*\*
         
     - log
