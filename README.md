@@ -35,7 +35,12 @@
 
 ### Изменения конфигурационного файла
 
-```Define SRVROOT "D:/WEB/tmp_GIT/Apache24"```
+Заменить (37 строка)
+> Define SRVROOT "c:/Apache24"
+на
+> Define SRVROOT "D:/WEB/tmp_GIT/Apache24"
+
+
 
 > В файле "D:\WEB\tmp_GIT\Apache24\conf\httpd.conf" делаем следующие правки:
 * Define SRVROOT на "D:\WEB\tmp_GIT\Apache24"
