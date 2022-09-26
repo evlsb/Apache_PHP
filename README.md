@@ -65,6 +65,15 @@ _Обновляем директиву "IfModule mime_module":_
 
 ```
 
+_Обновляем директиву "IfModule dir_module":_
+```python
+
+<IfModule dir_module>
+    DirectoryIndex index.html index.php
+</IfModule>
+
+```
+
 
 
 
