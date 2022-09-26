@@ -11,10 +11,15 @@
 ## Подготовительные работы
 - tmp_GIT
     - Apache24
+        - ***
+        - bin
+        - ***
     - log
     - php_th
     - tmp
     - www
+        - index.html
+        - index.php
 
 1. Создаем папку где будем хранить все файлы. К примеру ***D:\WEB\tmp_GIT***
 
