@@ -14,8 +14,8 @@
 
 ## Установка Apache 2.4
 
+
 ### Комманды Apache 2.4 ###
----
 * _httpd.exe -k install  : Установить Apache 2.4_
 * _httpd.exe -k start    : Запустить Apache 2.4_
 * _httpd.exe -k restart  : Перезапустить Apache 2.4_
