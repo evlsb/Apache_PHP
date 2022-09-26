@@ -9,19 +9,19 @@
 # Подключение PHP8 в качестве модуля Apache
 
 ## Подготовительные работы
- - tmp_GIT
-    - Apache24
-        - bin
-        - conf
-            - httpd.conf
-    - log
-    - php_th
-        - php.ini
-        - php8apache2_4.dll
-    - tmp
-    - www
-        - index.html
-        - index.php
+ - ***tmp_GIT***
+    - ***Apache24***
+        - ***bin***
+        - ***conf***
+            - ***httpd.conf***
+    - ***log***
+    - ***php_th***
+        - ***php.ini***
+        - ***php8apache2_4.dll***
+    - ***tmp***
+    - ***www***
+        - ***index.html***
+        - ***index.php***
 
 1. Создаем папку где будем хранить все файлы. К примеру ***D:\WEB\tmp_GIT***
 
