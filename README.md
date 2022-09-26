@@ -74,6 +74,13 @@ _Обновляем директиву "IfModule dir_module":_
 
 ```
 
+_Устанавливаем сервис Apache (от имени Администратора):_
+```python
+
+httpd.exe -k install
+
+```
+
 
 
 
@@ -87,15 +94,5 @@ _Обновляем директиву "IfModule dir_module":_
 
 ## Установка PHP 8
 
-> Копируем каталог "php_th" в папку "D:\WEB\tmp_GIT"
 
-> В конец файла "D:\WEB\tmp_GIT\Apache24\conf\httpd.conf" добавляем строки:
-* LoadModule php_module "D:/WEB/tmp_GIT/php_th/php8apache2_4.dll"
-* PHPIniDir "D:/WEB/tmp_GIT/php_th"
 
-> В блок "IfModule mime_module" файла "D:\WEB\tmp_GIT\Apache24\conf\httpd.conf" добавим две строчки
-* AddType application/x-httpd-php .php
-* AddType application/x-httpd-php-source .phps
-
-> В блок "IfModule dir_module" файла "D:\WEB\tmp_GIT\Apache24\conf\httpd.conf" добавим 
-* DirectoryIndex index.html index.php
