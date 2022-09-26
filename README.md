@@ -39,7 +39,8 @@ _Заменяем:_
 
 |строка|с|на|пояснение|
 |-----|-----|-----|-----|
-|37|***Define SRVROOT "c:/Apache24"***|***Define SRVROOT "D:/WEB/tmp_GIT/Apache24"***|_Путь папки Apache_|
+|37|```python 
+Define SRVROOT "c:/Apache24" ```|***Define SRVROOT "D:/WEB/tmp_GIT/Apache24"***|_Путь папки Apache_|
 |217|***ServerAdmin admin@example.com"***|***ServerAdmin localhost:80"***|_адрес сайта_|
 |250|***DocumentRoot "${SRVROOT}/htdocs"***|***DocumentRoot "D:/WEB/tmp_GIT/www"***|_каталог сайта_|
 |251|***DocumentRoot "${SRVROOT}/htdocs"***|***<Directory "D:/WEB/tmp_GIT/www">***|_каталог сайта_|
