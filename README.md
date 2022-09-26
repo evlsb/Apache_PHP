@@ -49,15 +49,15 @@ _Заменяем:_
 |-----|-----|-----|-----|
 |37|***Define SRVROOT "c:/Apache24"***|***Define SRVROOT "D:/WEB/tmp_GIT/Apache24"***|_Путь папки Apache_|
 |217|***ServerAdmin admin@example.com"***|***ServerAdmin localhost:80"***|_адрес сайта_|
-|250|***DocumentRoot "${SRVROOT}/htdocs"***|***DocumentRoot "D:/WEB/tmp_GIT/www"***|_каталог сайта_|
+|250|***DocumentRoot "${SRVROOT}/htdocs"***|***DocumentRoot "D:/WEB/tmp_GIT/www***|_каталог сайта_|
 |251|***DocumentRoot "${SRVROOT}/htdocs"***|***<Directory "D:/WEB/tmp_GIT/www">***|_каталог сайта_|
 
 _Добавляем в конец файла строки:_
 
 ```python
 
-LoadModule php_module "D:/WEB/tmp_GIT/php_th/php8apache2_4.dll"  
-PHPIniDir "D:/WEB/tmp_GIT/php_th"
+LoadModule php_module "D:/WEB/tmp_GIT/php/php8apache2_4.dll"  
+PHPIniDir "D:/WEB/tmp_GIT/php"
 
 ```
 
