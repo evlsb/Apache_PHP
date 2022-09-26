@@ -37,25 +37,13 @@
 
 Заменить:
 
-|строка|до|посде
+|строка|с|на
 |-----|-----|-----|
 |37|***Define SRVROOT "c:/Apache24"***|***Define SRVROOT "D:/WEB/tmp_GIT/Apache24"***
 |217|***ServerAdmin admin@example.com"***|***ServerAdmin localhost:80"***|
+|-----|-----|LoadModule php_module "D:/WEB/tmp_GIT/php_th/php8apache2_4.dll"  
+PHPIniDir "D:/WEB/tmp_GIT/php_th"|
 
-
-(37 строка) с
-> ***Define SRVROOT "c:/Apache24"***
-
-на
-
-> ***Define SRVROOT "D:/WEB/tmp_GIT/Apache24"***
-
-(217 строка) с
-> ***ServerAdmin admin@example.com"***
-
-на
-
-> ***ServerAdmin localhost:80"***
 
 
 
