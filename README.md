@@ -35,7 +35,7 @@
 
 ### Изменения конфигурационного файла
 
-Заменить:
+Заменяем:
 
 |строка|с|на|пояснение|
 |-----|-----|-----|-----|
@@ -44,11 +44,23 @@
 |250|***DocumentRoot "${SRVROOT}/htdocs"***|***DocumentRoot "D:/WEB/tmp_GIT/www"***|_каталог сайта_|
 |251|***DocumentRoot "${SRVROOT}/htdocs"***|***<Directory "D:/WEB/tmp_GIT/www">***|_каталог сайта_|
 
-Добавить в конец файла строки:
+Добавляем в конец файла строки:
 
 > LoadModule php_module "D:/WEB/tmp_GIT/php_th/php8apache2_4.dll"  
 
 > PHPIniDir "D:/WEB/tmp_GIT/php_th"
+
+```python
+
+<IfModule mime_module>
+    AddType application/x-compress .Z
+    AddType application/x-gzip .gz .tgz
+    AddType application/x-httpd-php .php
+    AddType application/x-httpd-php-source .phps
+</IfModule>
+
+```
+
 
 
 
