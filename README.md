@@ -44,14 +44,7 @@
 |250|***DocumentRoot "${SRVROOT}/htdocs"***|***DocumentRoot "D:/WEB/tmp_GIT/www"***|
 |251|***DocumentRoot "${SRVROOT}/htdocs"***|***<Directory "D:/WEB/tmp_GIT/www">***|
 
-> Define SRVROOT на "D:\WEB\tmp_GIT\Apache24"
 
-
-
-> В файле "D:\WEB\tmp_GIT\Apache24\conf\httpd.conf" делаем следующие правки:
-* Define SRVROOT на "D:\WEB\tmp_GIT\Apache24"
-* DocumentRoot на "D:\WEB\tmp_GIT\www"
-* ServerName на "ServerName localhost:80"
 
 > Устанавливаем сервис Apache (от имени Администратора): httpd.exe -k install
 
