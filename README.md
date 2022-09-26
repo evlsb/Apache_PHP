@@ -39,11 +39,10 @@
 
 |строка|с|на
 |-----|-----|-----|
-|37|***Define SRVROOT "c:/Apache24"***|***Define SRVROOT "D:/WEB/tmp_GIT/Apache24"***
-|217|***ServerAdmin admin@example.com"***|***ServerAdmin localhost:80"***|
-|250|***DocumentRoot "${SRVROOT}/htdocs"***|***DocumentRoot "D:/WEB/tmp_GIT/www"***|
-|251|***DocumentRoot "${SRVROOT}/htdocs"***|***<Directory "D:/WEB/tmp_GIT/www">***|
-|-----|-----|a   b|
+|37|***Define SRVROOT "c:/Apache24"***|***Define SRVROOT "D:/WEB/tmp_GIT/Apache24"***|Путь папки Apache|
+|217|***ServerAdmin admin@example.com"***|***ServerAdmin localhost:80"***|адрес сайта|
+|250|***DocumentRoot "${SRVROOT}/htdocs"***|***DocumentRoot "D:/WEB/tmp_GIT/www"***|каталог сайта|
+|251|***DocumentRoot "${SRVROOT}/htdocs"***|***<Directory "D:/WEB/tmp_GIT/www">***|каталог сайта|
 
 
 
