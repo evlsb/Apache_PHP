@@ -35,7 +35,7 @@
 
 ### Изменения конфигурационного файла
 
-Заменяем:
+_Заменяем:_
 
 |строка|с|на|пояснение|
 |-----|-----|-----|-----|
@@ -44,7 +44,7 @@
 |250|***DocumentRoot "${SRVROOT}/htdocs"***|***DocumentRoot "D:/WEB/tmp_GIT/www"***|_каталог сайта_|
 |251|***DocumentRoot "${SRVROOT}/htdocs"***|***<Directory "D:/WEB/tmp_GIT/www">***|_каталог сайта_|
 
-Добавляем в конец файла строки:
+_Добавляем в конец файла строки:_
 
 ```python
 
@@ -53,7 +53,7 @@ PHPIniDir "D:/WEB/tmp_GIT/php_th"
 
 ```
 
-Обновляем директиву "IfModule mime_module":
+_Обновляем директиву "IfModule mime_module":_
 ```python
 
 <IfModule mime_module>
