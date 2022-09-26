@@ -10,15 +10,15 @@
 
 ## Подготовительные работы
 
-1. Распаковываем из архива "httpd-2.4.38-win64-VC11.zip" папку Apache24 в "D:\WEB\tmp_GIT"
+1. Распаковываем из архива ***httpd-2.4.38-win64-VC11.zip*** папку Apache24 в ***D:\WEB\tmp_GIT***
 
-2. Также в "D:\WEB\tmp_GIT" создаем папки "log", "php_th", "tmp", "www"
+2. Также в ***D:\WEB\tmp_GIT*** создаем папки "log", "php_th", "tmp", "www"
 
 3. В каталоге "www" создаем  файла "index.html" с содержимым "It works!" и "index.php" с содержимым "<?php phpinfo(); ?>"
 
-4. Копируем каталог "php_th" в папку "D:\WEB\tmp_GIT"
+4. Копируем каталог "php_th" в папку ***D:\WEB\tmp_GIT***
 
-5. В системную переменную PATH добавляем пути: "D:\WEB\tmp_GIT\Apache24\bin", "D:\WEB\tmp_GIT\php_th"
+5. В системную переменную PATH добавляем пути: ***D:\WEB\tmp_GIT\Apache24\bin***, ***D:\WEB\tmp_GIT\php_th***
 
 ## Установка Apache 2.4
 
