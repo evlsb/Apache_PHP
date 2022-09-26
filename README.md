@@ -27,6 +27,16 @@
 ---
 
  ***В системную переменную PATH добавляем пути:***
+ ```python
+
+D:\WEB\tmp_GIT\php_th
+
+```
+ ```python
+
+D:\WEB\tmp_GIT\Apache24\bin
+
+```
 > ***D:\WEB\tmp_GIT\php_th***
 
 > ***D:\WEB\tmp_GIT\Apache24\bin***
