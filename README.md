@@ -84,15 +84,3 @@ httpd.exe -k install
 
 
 
-> Устанавливаем сервис Apache (от имени Администратора): httpd.exe -k install
-
-> Удалить службу Апач "sc delete Apache2.4"
-
-> Создаем на рабочем столе ярлык "D:\WEB\tmp_GIT\Apache24\bin\ApacheMonitor.exe"
-
-> В браузере заходим на http://localhost/ - должны увидеть It works!
-
-## Установка PHP 8
-
-
-
