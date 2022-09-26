@@ -36,6 +36,13 @@
 ### Изменения конфигурационного файла
 
 Заменить:
+
+|строка|до|посде
+|-----|-----|-----|
+|37|***Define SRVROOT "c:/Apache24"***|***Define SRVROOT "D:/WEB/tmp_GIT/Apache24"***
+|217|***ServerAdmin admin@example.com"***|***ServerAdmin localhost:80"***|
+
+
 (37 строка) с
 > ***Define SRVROOT "c:/Apache24"***
 
