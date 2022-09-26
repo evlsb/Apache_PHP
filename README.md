@@ -12,7 +12,10 @@
 - tmp_GIT
     - Apache24
         - \*\*\*
-        - bin
+        - conf
+            - \*\*\*
+            - httpd.conf
+            - \*\*\*
         - \*\*\*
     - log
     - php_th
