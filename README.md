@@ -33,8 +33,9 @@
 
 ## Установка Apache 2.4
 
+### Изменения конфигурационного файла
 
-
+```Define SRVROOT "D:/WEB/tmp_GIT/Apache24"```
 
 > В файле "D:\WEB\tmp_GIT\Apache24\conf\httpd.conf" делаем следующие правки:
 * Define SRVROOT на "D:\WEB\tmp_GIT\Apache24"
