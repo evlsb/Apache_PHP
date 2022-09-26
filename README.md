@@ -53,6 +53,7 @@ PHPIniDir "D:/WEB/tmp_GIT/php_th"
 
 ```
 
+Обновляем директиву <IfModule mime_module>:
 ```python
 
 <IfModule mime_module>
