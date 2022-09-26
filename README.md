@@ -9,13 +9,15 @@
 # Подключение PHP8 в качестве модуля Apache
 
 ## Подготовительные работы
-> - tmp_GIT
->    - Apache24
+ - tmp_GIT
+    - Apache24
         - bin
         - conf
             - httpd.conf
     - log
     - php_th
+        - php.ini
+        - php8apache2_4.dll
     - tmp
     - www
         - index.html
