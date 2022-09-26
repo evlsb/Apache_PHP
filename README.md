@@ -16,12 +16,12 @@
 
 
 ### Комманды Apache 2.4 ###
-* _httpd.exe -k install_  : Установить Apache 2.4
-* _httpd.exe -k start_    : Запустить Apache 2.4
-* _httpd.exe -k restart_  : Перезапустить Apache 2.4
-* _httpd -k shutdown_     : Остановка Apache 2.4
-* _httpd -k stop_         : Остановка Apache 2.4
-* _httpd -k uninstall_    : Удаление Apache 2.4
+* __httpd.exe -k install__  : Установить Apache 2.4
+* __httpd.exe -k start__    : Запустить Apache 2.4
+* __httpd.exe -k restart__  : Перезапустить Apache 2.4
+* __httpd -k shutdown__     : Остановка Apache 2.4
+* __httpd -k stop__         : Остановка Apache 2.4
+* __httpd -k uninstall__    : Удаление Apache 2.4
 ---
 
 > В файле "D:\WEB\tmp_GIT\Apache24\conf\httpd.conf" делаем следующие правки:
