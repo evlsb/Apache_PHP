@@ -1,3 +1,11 @@
+### Комманды Apache 2.4 ###
+* ***httpd.exe -k install***  : _Установить_
+* ***httpd.exe -k start***    : _Запустить_
+* ***httpd.exe -k restart***  : _Перезапустить_
+* ***httpd -k shutdown***     : _Остановить_
+* ***httpd -k stop***         : _Остановитть_
+* ***httpd -k uninstall***    : _Удалить_
+
 # Подключение PHP8 в качестве модуля Apache
 
 ## Подготовительные работы
@@ -15,14 +23,7 @@
 ## Установка Apache 2.4
 
 
-### Комманды Apache 2.4 ###
-* ***httpd.exe -k install***  : _Установить_
-* ***httpd.exe -k start***    : _Запустить_
-* ***httpd.exe -k restart***  : _Перезапустить_
-* ***httpd -k shutdown***     : _Остановить_
-* ***httpd -k stop***         : _Остановитть_
-* ***httpd -k uninstall***    : _Удалить_
----
+
 
 > В файле "D:\WEB\tmp_GIT\Apache24\conf\httpd.conf" делаем следующие правки:
 * Define SRVROOT на "D:\WEB\tmp_GIT\Apache24"
