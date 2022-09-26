@@ -11,6 +11,7 @@
 ## Подготовительные работы
 - tmp_GIT
     - Apache24
+        - bin
         - conf
             - httpd.conf
     - log
