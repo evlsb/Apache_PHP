@@ -44,6 +44,11 @@
 |250|***DocumentRoot "${SRVROOT}/htdocs"***|***DocumentRoot "D:/WEB/tmp_GIT/www"***|_каталог сайта_|
 |251|***DocumentRoot "${SRVROOT}/htdocs"***|***<Directory "D:/WEB/tmp_GIT/www">***|_каталог сайта_|
 
+Добавить в конец файла:
+
+> LoadModule php_module "D:/WEB/tmp_GIT/php_th/php8apache2_4.dll"
+> PHPIniDir "D:/WEB/tmp_GIT/php_th"
+
 
 
 > Устанавливаем сервис Apache (от имени Администратора): httpd.exe -k install
