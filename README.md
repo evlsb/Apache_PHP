@@ -101,8 +101,11 @@ httpd.exe -k install
 
 ```
 
-Добавим 2 папки хостов
+Добавим 2 папки хостов и логов
 
+- ***log*** _(файлы с логами)_
+    - ***host1.localhost*** _(файлы host1)_
+    - ***host2.localhost*** _(файлы host2)_
 - ***www*** _(файлы сайта)_
     - ***host1.localhost*** _(файлы host1)_
         - ***index.html***
