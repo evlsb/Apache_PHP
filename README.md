@@ -105,6 +105,8 @@ httpd.exe -k install
 
 - ***www*** _(файлы сайта)_
     - ***host1.localhost*** _(файлы host1)_
+        - ***index.html***
     - ***host2.localhost*** _(файлы host2)_
+        - ***index.html***
     - ***index.html***
     - ***index.php***
