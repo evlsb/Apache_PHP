@@ -123,3 +123,26 @@ _Расскоментируем строку 511:_
 #Include conf/extra/httpd-vhosts.conf
 
 ```
+
+Правим файл "D:\WEB\tmp_GIT\Apache24\conf\extra\httpd-vhosts.conf"
+```python
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@dummy-host.example.com
+    DocumentRoot "D:/WEB/tmp_GIT/www/host1.localhost"
+    ServerName host1.localhost
+    ServerAlias www.host1.localhost
+    ErrorLog "D:/WEB/tmp_GIT/log/host1.localhost/error.log"
+    CustomLog "D:/WEB/tmp_GIT/log/host1.localhost/access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@dummy-host2.example.com
+    DocumentRoot "D:/WEB/tmp_GIT/www/host1.localhost"
+    ServerName host2.localhost
+    ServerAlias www.host2.localhost
+    ErrorLog "D:/WEB/tmp_GIT/log/host2.localhost/error.log"
+    CustomLog "D:/WEB/tmp_GIT/log/host2.localhost/access.log" common
+</VirtualHost>
+
+```
