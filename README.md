@@ -100,7 +100,9 @@ httpd.exe -k install
 127.0.0.1 host2.localhost
 
 ```
+
 Добавим 2 папки хостов
+
 - ***www*** _(файлы сайта)_
     - ***host1.localhost*** _(файлы host1)_
     - ***host2.localhost*** _(файлы host2)_
