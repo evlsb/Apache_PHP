@@ -5,7 +5,7 @@
 * ***httpd -k shutdown***     : _Остановить_
 * ***httpd -k stop***         : _Остановитть_
 * ***httpd -k uninstall***    : _Удалить_ 
-* ***sc delete Apache2.4***    : _Удалить_
+* ***sc delete Apache2.4***    : _Удалить_ 
 
 # Подключение PHP8 в качестве модуля Apache
 
