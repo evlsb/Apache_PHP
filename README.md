@@ -104,8 +104,8 @@ httpd.exe -k install
 Добавим 2 папки хостов и логов
 
 - ***log*** _(файлы с логами)_
-    - ***host1.localhost*** _(файлы host1)_
-    - ***host2.localhost*** _(файлы host2)_
+    - ***host1.localhost*** _(логи host1)_
+    - ***host2.localhost*** _(логи host2)_
 - ***www*** _(файлы сайта)_
     - ***host1.localhost*** _(файлы host1)_
         - ***index.html***
@@ -115,3 +115,11 @@ httpd.exe -k install
         - ***index.php***
     - ***index.html***
     - ***index.php***
+
+
+_Расскоментируем строку 511:_
+```python
+
+#Include conf/extra/httpd-vhosts.conf
+
+```
