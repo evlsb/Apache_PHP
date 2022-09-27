@@ -90,6 +90,19 @@ httpd.exe -k install
 
 ```
 
+### Добавление виртуальных хостов
 
+В файле "C:\Windows\System32\drivers\etc\hosts" добавим 2 строки:
 
+```python
 
+127.0.0.1 host1.localhost
+127.0.0.1 host2.localhost
+
+```
+Добавим 2 папки хостов
+- ***www*** _(файлы сайта)_
+    - ***host1.localhost*** _(файлы host1)_
+    - ***host2.localhost*** _(файлы host2)_
+    - ***index.html***
+    - ***index.php***
