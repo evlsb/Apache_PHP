@@ -146,3 +146,5 @@ _Расскоментируем строку 511:_
 </VirtualHost>
 
 ```
+
+# Apache + mod_fcgi
