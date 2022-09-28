@@ -173,10 +173,94 @@ _Заменяем:_
 |строка|с|на|пояснение|
 |-----|-----|-----|-----|
 |37|***Define SRVROOT "c:/Apache24"***|***Define SRVROOT "D:/WEB/tmp_GIT/Apache24"***|_Путь папки Apache_|
+|250|***DocumentRoot "${SRVROOT}/htdocs"***|***DocumentRoot "D:/WEB/tmp_GIT/www***|_каталог сайта_|
+|251|***DocumentRoot "${SRVROOT}/htdocs"***|***<Directory "D:/WEB/tmp_GIT/www">***|_каталог сайта_|
 
 Подключаем модуль FastCGI
 ```python
 
 LoadModule fcgid_module modules/mod_fcgid.so
+
+```
+
+_Обновляем директиву "IfModule dir_module":_
+```python
+
+<IfModule dir_module>
+    DirectoryIndex index.html index.php
+</IfModule>
+
+```
+
+_Подключаем виртуальные хосты:_
+```python
+
+# Virtual hosts
+Include conf/extra/httpd-vhosts.conf
+
+```
+
+_Подключаем внешний файл настройки FastCGI:_
+```python
+
+# FastCGI
+Include conf/extra/httpd-fastcgi.conf
+
+```
+
+_Настраиваем внений файл conf/extra/httpd-fastcgi.conf:_
+```python
+
+FcgidInitialEnv PATH "D:/WEB/tmp_GIT/php_nts;C:/WINDOWS/system32;C:/WINDOWS;C:/WINDOWS/System32/Wbem;"
+FcgidInitialEnv SystemRoot "C:/Windows"
+FcgidInitialEnv SystemDrive "C:"
+FcgidInitialEnv TEMP "C:/WINDOWS/Temp"
+FcgidInitialEnv TMP "C:/WINDOWS/Temp"
+FcgidInitialEnv windir "C:/WINDOWS"
+FcgidIOTimeout 64
+FcgidConnectTimeout 16
+FcgidMaxRequestsPerProcess 1000 
+FcgidMaxProcesses 50 
+FcgidMaxRequestLen 8131072
+# Location php.ini:
+FcgidInitialEnv PHPRC "D:/WEB/tmp_GIT/php_nts"
+FcgidInitialEnv PHP_FCGI_MAX_REQUESTS 1000
+
+<Files ~ "\.php$>"
+  AddHandler fcgid-script .php
+  FcgidWrapper "D:/WEB/tmp_GIT/php_nts/php-cgi.exe" .php
+</Files>
+
+```
+
+_В файле php.ini настраиваем временную зону:_
+```python
+
+date.timezone = "Asia/Yekaterinburg"
+
+```
+
+_Настраиваем внений файл conf/extra/httpd-vhosts.conf:_
+```python
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@dummy-host.example.com
+    DocumentRoot "D:/WEB/tmp_GIT/htdocs"
+    ServerName localhost
+    ServerAlias www.dummy-host.example.com
+    ErrorLog "logs/error.log"
+    CustomLog "logs/access.log" common
+
+    DirectoryIndex index.php index.htm index.html
+
+    <Directory "D:/WEB/tmp_GIT/htdocs">
+        Options Indexes ExecCGI
+        AllowOverride All
+        Order allow,deny
+        Allow from all
+        Require all granted
+    </Directory>
+
+</VirtualHost>
 
 ```
