@@ -163,3 +163,20 @@ _Расскоментируем строку 511:_
     - ***htdocs*** _(файлы сайта)_
         - ***index.php***
 ---
+
+Копирем в папку "Apache24\modules" файл mod_fcgid.so
+
+### Изменения конфигурационного файла
+
+_Заменяем:_
+
+|строка|с|на|пояснение|
+|-----|-----|-----|-----|
+|37|***Define SRVROOT "c:/Apache24"***|***Define SRVROOT "D:/WEB/tmp_GIT/Apache24"***|_Путь папки Apache_|
+
+Подключаем модуль FastCGI
+```python
+
+LoadModule fcgid_module modules/mod_fcgid.so
+
+```
